@@ -2,8 +2,8 @@
 const { mongoose } = require('./../db/mongoose');
 
 // !!! hier: 
-// neues Projekt: utxt
-// hyperwort.de, hyperwort.com registrieren
+// Expensify-React16 oder react-Boilerplate deploy
+// Frontend auf utxt anpassen
 
 // tests aktualisieren
 // seed2 zu testen der Datenbankspeicherung (Mongoose.save)

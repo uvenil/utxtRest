@@ -1,0 +1,125 @@
+
+Live Chat
+Wir sind online! Bitte geben Sie Ihre Frage oder Nachricht ein und wir werden Sie sofort mit einem unserer Mitarbeiter verbinden.
+13:04:22
+Gast 
+Wo kann ich meinen aktuellen Tarif einsehen?
+Sie sprechen jetzt mit Cindy Flink.
+13:05:18
+Cindy Flink
+Guten Tag Michael Ackmann, mein Name ist Cindy Flink.
+13:05:29
+Gast 
+Hallo
+13:05:44
+Cindy Flink
+wie meinen Sie dieses?
+13:05:50
+ein Webspace haben Sie bei uns nicht
+13:06:07
+Gast 
+?
+13:06:55
+Ich erhalte doch eine Rechnung. Das zugehörige Leistungspaket würde ich gerne einsehen.
+13:07:38
+Cindy Flink
+bei der Kundennummer 24666 kann ich kein Webspace ersehen
+13:07:45
+auch haben Sie dazu nur eine Rechnung für Domains
+13:08:00
+gerne können Sie mir einmal die Rechnungsnummer senden
+13:08:42
+Gast 
+171130-G-889318
+13:09:26
+Cindy Flink
+aber dort sind nur Leistunden für Domains zu sehen
+13:09:33
+nicht für ein Hosting Paket
+13:09:57
+Gast 
+Ich habe auch nie von einem Webspace gesprochen. (sh. oben)
+13:11:17
+Cindy Flink
+dann verstehe ich leider nicht ganz was Sie meinen. Was meinen Sie mit Tarif und Leistungspaket? Wir defferenzieren dieses bei uns. Also einmal Domain und einmal Hosting. Dieses ist bei uns nicht zusammen
+13:12:37
+Gast 
+Ich würde gerne die Kerndaten meines Vertrages ansehen: Jährliche Kosten, Abrechnungszeitraum, Kündigungsfristen, etc.
+13:15:09
+Cindy Flink
+Sie haben am 29.11.2017 alle Domains (laut Domain-Portfolio) bei uns gebucht. Dieses ist nun für 12 Monate. Für diesen Zeitraum haben Sie auch schon die Domains gezahlt. Siehe Rechnung 171130-G-889318
+13:15:31
+Dort ist auch für jede Domain die jährlichen Kosten aufgelistet
+13:15:56
+Eine Kündigungsfrist ist bei uns 30 Tage vor Verlängerung der Domain
+13:16:07
+dieses können Sie jederzeit immer bei uns hinterlegen
+13:17:25
+Gast 
+Gibt es keinen zentralen Ort, an dem ich diese Daten einsehen kann ohne einzelne Rechnungen durchzusehen?
+13:17:54
+Ich wüßte z.B., was es mich kosten würde, weitere Domains hinzuzufügen.
+13:19:16
+Cindy Flink
+Die Kerndaten für die abgeschlossenen Domains finden Sie in der Bestellbestätigung
+13:20:08
+Da die Preise je Endung (.de, .at, etc.) unterschiedlich sind, finden Sie diese entsprechend in der Preisliste. Ausserdem wird Ihnen der Preis bei der Bestellung einer neuen Domain angezeigt.
+13:20:14
+Die Preisliste finden Sie hier:
+13:20:18
+https://www.do.de/domains/preise/
+13:20:33
+Details zu den einzelnen Endunden finden Sie in unser TLD-Info. Hier ein Bsp für .de
+13:20:41
+https://www.do.de/tldinfo/de/domain/#p2
+13:20:55
+Tab "Preise" und "Details".
+13:22:20
+Gast 
+Also gibt es keinen Mengenrabatt bei den Domains ?
+13:23:05
+Cindy Flink
+Einen Mengenrabatt können wir Ihnen ab 50 Domains anbieten
+13:26:18
+Gast 
+Ah ja. Wo finde ich denn die Bestellbestätigung?
+13:26:27
+Also einen zentralen Ort mit meinen gebuchten Tarifen (es können ja auch zuvor gebuchte Sonderrabatte sein, die in der aktuellen Preisliste nicht mehr erscheinen) gibt es leider nicht, wenn ich das jetzt richtig verstanden habe!?
+13:28:52
+Cindy Flink
+Die Bestellbestätigung erhalten Sie per Mail an die bei uns hinterlegte Mailadresse.
+13:29:25
+Wenn Sie Sonderkonditionen mit uns ausgehandelt hätten, würden Ihnen diese ebenfalls in der Preisliste gesondert angezeigt
+13:30:25
+Gast 
+Schade, dass es kein richtiges Konto gibt, wo alle Informationen vereint sind!
+13:30:44
+Cindy Flink
+Wenn Sie eine Registrierung innerhalb einer Sonderaktion durchgeführt haben, wird dieses ebenfalls gesondert ausgewiesen
+13:31:45
+Gast 
+Vielen Dank erstmal für diese Info. Ich hätte da noch 2 weitere Fragen:
+13:32:17
+Cindy Flink
+Vertragsinformationen zu der Domain finden Sie im Domain-Portfolio auf dem i-icon
+13:33:37
+Gast 
+1. Wie kann ich den C-name ändern, so dass ich z.B. auf eine heroku-Webseite weiterleite?
+13:34:19
+Cindy Flink
+Dies können Sie in der DNS editieren. Hilfe zur DNS und der Verwaltung dazu finden Sie in unserem Wiki unter folgenden Link:
+13:34:31
+https://www.do.de/wiki/DNS
+13:35:08
+Gast 
+Hätten Sie vielleicht einen kurzen Tipp, was ich dort eintragen müsste?
+13:35:57
+Cindy Flink
+Diese Info müssten Sie von dem heroku Diensleister einholen
+13:36:03
+er gibt den DNS Eintrag vor
+13:36:25
+Gast 
+Alles klar.
+
+Geben Sie eine Nachricht ein
