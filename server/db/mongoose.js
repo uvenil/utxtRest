@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 mongoose.plugin(require('./../models/basePlugin'));
-const extend = require('mongoose-schema-extend');
+// const extend = require('mongoose-schema-extend');
 
 
 mongoose.Promise = global.Promise;
