@@ -2,6 +2,7 @@
 const { mongoose } = require('./../db/mongoose');
 
 // !!! hier: 
+// version-Attribut in wort einfügen
 // Expensify-React16 oder react-Boilerplate deploy
 // Frontend auf utxt anpassen
 
@@ -11,6 +12,9 @@ const { mongoose } = require('./../db/mongoose');
 // , ggf. zirkuläre Sätze ermitteln in 2D, 3D, xD
 // Usergruppen mit Rechten
 // Utxt Patent anmelden
+
+// const { BaseSchema } = require('./base');
+// const WortSchema = BaseSchema.extend({
 const WortSchema = new mongoose.Schema({
   wort: {
     type: String,
@@ -20,24 +24,6 @@ const WortSchema = new mongoose.Schema({
   },
   satzteileIn: [mongoose.Schema.Types.ObjectId], // Satzteile, in denen das aktuelle wort vorkommt (ObjectIds)
   satzteileIf: [mongoose.Schema.Types.ObjectId], // Satzteile, bei denen der aktuelle wort Bedingung für deren Gükltigkeit/Existenz ist (ObjectId)
-  archived: {
-    type: Boolean,
-    default: null // null = Standard, true = archiviert, false = priorisiert
-  },
-  time: {
-    archivedAt: {
-      type: Number,
-      default: null
-    },
-    lastModified: {
-      type: Number,
-      default: new Date().getTime()
-    },
-    createdAt: {
-      type: Number,
-      default: new Date().getTime()
-    }
-  },
   wortuser: {
     _creator: {
       type: mongoose.Schema.Types.ObjectId,
@@ -53,6 +39,7 @@ const WortSchema = new mongoose.Schema({
     }]
   }
 }, { discriminatorKey: '_type' });
+// });
 
 const Wort = mongoose.model('Wort', WortSchema);
 

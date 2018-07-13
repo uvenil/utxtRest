@@ -3,8 +3,11 @@ const validator = require('validator');
 const jwt = require('jsonwebtoken');
 const _ = require('lodash');
 const bcrypt = require('bcryptjs');
+// const { BaseSchema } = require('./base');
+// var UserSchema = BaseSchema.extend({
 
-var UserSchema = new mongoose.Schema({
+
+const UserSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
@@ -36,7 +39,7 @@ var UserSchema = new mongoose.Schema({
     enum: [null, 'none', 'read', 'write', 'move', 'write-read', 'move-read', 'move-write', 'move-write-read'],
     default: 'move-write-read'
   }
-});
+}, { discriminatorKey: '_type' });
 
 UserSchema.methods.toJSON = function () {
   var user = this;
