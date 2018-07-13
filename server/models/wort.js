@@ -2,7 +2,6 @@
 const { mongoose } = require('./../db/mongoose');
 
 // !!! hier: 
-// version-Attribut in wort einfügen
 // Expensify-React16 oder react-Boilerplate deploy
 // Frontend auf utxt anpassen
 
@@ -13,8 +12,6 @@ const { mongoose } = require('./../db/mongoose');
 // Usergruppen mit Rechten
 // Utxt Patent anmelden
 
-// const { BaseSchema } = require('./base');
-// const WortSchema = BaseSchema.extend({
 const WortSchema = new mongoose.Schema({
   wort: {
     type: String,
