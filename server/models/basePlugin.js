@@ -16,24 +16,10 @@ module.exports = exports = function lastModifiedPlugin(schema, options) {
         type: Number,
         default: 0
       },
-      _vSchema: {
-        type: Number,
-        default: 1
-      }
-    },
-    time: {
-      archivedAt: {
-        type: Number,
-        default: null
-      },
-      createdAt: {
-        type: Number,
-        default: new Date().getTime()
-      },
-      lastModified: {
-        type: Number,
-        default: new Date().getTime()
-      }
+      // _vSchema: {
+      //   type: Number,
+      //   default: 1
+      // }
     }
   });
   

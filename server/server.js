@@ -7,7 +7,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const {ObjectID} = require('mongodb');
 
-var {mongoose} = require('./db/mongoose');
+// var {mongoose} = require('./db/mongoose');
 var {Wort} = require('./models/wort');
 var {User} = require('./models/user');
 var {authenticate} = require('./middleware/authenticate');
@@ -21,10 +21,6 @@ app.post('/worte', authenticate, (req, res) => {
   const aktTime = new Date().getTime();
   var wort = new Wort({
     wort: req.body.wort,
-    time: {
-      createdAt: aktTime,
-      lastModified: aktTime
-    },
     'wortuser._creator': req.user._id
   });
 
@@ -101,10 +97,8 @@ app.patch('/worte/:id', authenticate, (req, res) => {
   }
 
   if (_.isBoolean(body.archived) && body.archived) {
-    body.time.archivedAt = aktTime;
   } else {
     body.archived = false;
-    body.time.archivedAt = null;
   }
   
   Wort.findOneAndUpdate({ _id: id, 'wortuser._creator': req.user._id}, {$set: body}, {new: true}).then((wort) => {

@@ -30,8 +30,8 @@ describe('POST /worte', () => {
         Wort.find({wort}).then((worte) => {
           expect(worte.length).toBe(1);
           expect(worte[0].wort).toBe(wort);
-          expect(typeof worte[0].time.lastModified).toBe('number');
-          expect(typeof worte[0].time.createdAt).toBe('number');
+          expect(typeof worte[0].base._lastMod).toBe('object');
+          expect(typeof worte[0]._id.getTimestamp()).toBe('object');
           done();
         }).catch((e) => done(e));
       });
@@ -185,9 +185,7 @@ describe('PATCH /worte/:id', () => {
       .expect((res) => {
         expect(res.body.wort.wort).toBe(wort);
         expect(res.body.wort.archived).toBe(true);
-        expect(typeof res.body.wort.time.archivedAt).toBe('number');
-        expect(typeof res.body.wort.time.lastModified).toBe('number');
-        expect(typeof res.body.wort.time.createdAt).toBe('number');
+        expect(typeof res.body.wort.base._lastMod).toBe('string');
       })
       .end(done);
   });
@@ -222,7 +220,6 @@ describe('PATCH /worte/:id', () => {
       .expect((res) => {
         expect(res.body.wort.wort).toBe(wort);
         expect(res.body.wort.archived).toBe(false);
-        expect(res.body.wort.time.archivedAt).not.toBeTruthy();
       })
       .end(done);
   });
