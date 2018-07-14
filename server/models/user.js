@@ -31,12 +31,15 @@ const UserSchema = new mongoose.Schema({
       type: String,
       required: true
     }
-  }],
-  right: {  // wird noch nicht verwendet
-    type: String,
-    enum: [null, 'none', 'read', 'write', 'move', 'write-read', 'move-read', 'move-write', 'move-write-read'],
-    default: 'move-write-read'
-  }
+  }]
+  // wird noch nicht verwendet
+  // , 
+  // right: { 
+  //   type: String,
+  //   enum: [null, 'none', 'read', 'write', 'move', 'write-read', 'move-read', 'move-write', 'move-write-read'],
+  //   default: 'move-write-read'
+  // },
+  // usergroups: [mongoose.Schema.Types.ObjectId]
 });
 
 UserSchema.methods.toJSON = function () {

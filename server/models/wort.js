@@ -2,16 +2,6 @@
 // gleichzeitig auch der HyperSatz
 const { mongoose } = require('./../db/mongoose');
 
-// !!! hier:
-// Expensify-React16 oder react-Boilerplate deploy
-// Frontend auf utxt anpassen
-
-// tests aktualisieren
-// seed2 zu testen der Datenbankspeicherung (Mongoose.save)
-
-// , ggf. zirkuläre Sätze ermitteln in 2D, 3D, xD
-// Usergruppen mit Rechten
-// Utxt Patent anmelden
 
 const WortSchema = new mongoose.Schema({
   // vorher Wort

@@ -1,5 +1,16 @@
 // wort = hyperwort, satz = hypersatz
 
+
+// !!! hier:
+// Expensify-React16 oder react-Boilerplate deploy
+// Verknüpfung mit frontend, Frontend auf utxt anpassen
+// tests aktualisieren
+// seed2 dient zum Testen der Datenbankspeicherung (Mongoose.save)
+// , ggf. zirkuläre Sätze ermitteln in 2D, 3D, xD
+// Usergruppen mit Rechten
+// Utxt Patent anmelden
+
+
 require('./config/config');
 
 const _ = require('lodash');
