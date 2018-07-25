@@ -2,6 +2,7 @@
 
 
 // !!! hier:
+// mongoose-schema-extend läuft nur bis "mongoose": "5.1.4" und kann evtl deinstalliert werden
 // Expensify-React16 oder react-Boilerplate deploy
 // Verknüpfung mit frontend, Frontend auf utxt anpassen
 // tests aktualisieren
@@ -17,16 +18,26 @@ const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
 const {ObjectID} = require('mongodb');
+const cors = require("cors");
 
 // var {mongoose} = require('./db/mongoose');
 var {Wort} = require('./models/wort');
 var {User} = require('./models/user');
 var {authenticate} = require('./middleware/authenticate');
 
-var app = express();
 const port = process.env.PORT;
+var app = express();
+
+app.use(cors("*"));
 
 app.use(bodyParser.json());
+
+app.use('*', (req, res, next) => {
+  console.log("path", req.path);
+  console.log("originalUrl", req.originalUrl);
+  next();
+})
+
 
 app.post('/worte', authenticate, (req, res) => {
   const aktTime = new Date().getTime();
